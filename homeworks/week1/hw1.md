@@ -2,6 +2,8 @@
 ### 請用文字一步步敘述應該如何交作業。
 
 步驟：
+
+**作業批改前**
  
 * 先連上GitHuba classroom [網址](https://classroom.github.com/a/SbDvk2VA)
 * 接受網址內的邀請之後，線上系統會自行複製一份課綱到每個人的各自帳號中
@@ -38,4 +40,16 @@
 - 合併完成後，可用 git branch -v 檢查現在位在哪一條branch 上面、接著使用 git log 檢查版本 (commit) 是否有更新到最新狀態，確認沒問題之後，用  git branch -d 刪除掉不需要的 branch
 - **`git push origin master'** 把電腦中的檔案與網路上同步
 
+* 到自己的 repo 去，並且發起 **PR（Pull Request**）
+* 把 PR 的連結複製起來，並且在學習系統上繳交作業
+
+**作業由助教批改並merge後**
+ *
+
+-  **`git checkout master`** 切換到 master
+ *
+
+- **`git pull origin master`** 把最新的修正檔拉回自己的電腦
+ *
+- **`git branch -d`** 刪除為了寫作業在自己電腦新增的、已經merge 的 branch
 
