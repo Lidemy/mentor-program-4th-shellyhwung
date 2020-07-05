@@ -1,4 +1,24 @@
 //有用console.log()印出測試結果，答案ok
+//我把原始檔案放在下方保留著，想當作對照參考
+
+function capitalize(str) {
+var strNum = str.charCodeAt(0)
+if (strNum >= 97 && strNum <= 122){
+ var first= String.fromCharCode(strNum-32) 
+ return str.replace(str[0],first)
+} else {
+ return str
+}
+}
+capitalize('nick')
+capitalize('Nick')
+capitalize(',hello')
+capitalize(',Hello')
+capitalize('hello')
+
+
+/*
+//有用console.log()印出測試結果，答案ok
 function capitalize(str) {
 	var strNum = str.charCodeAt(0)
   if (strNum>=97&& strNum<=122){
