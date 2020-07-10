@@ -1,6 +1,16 @@
-// 輸入為一個數字 N，請按照規律輸出正確圖形
+const readline = require('readline');
 
-function stars(n) {
+const lines = [];
+const rl = readline.createInterface({
+  input: process.stdin,
+});
+
+rl.on('line', (line) => {
+  lines.push(line);
+});
+
+function solve(input) {
+  const n = Number(input[0]);
   let result = '';
   const star = '*';
   for (let i = 1; i <= n; i += 1) {
@@ -8,7 +18,6 @@ function stars(n) {
     console.log(result);
   }
 }
-stars(1);
-stars(3);
-stars(5);
-stars(7);
+rl.on('close', () => {
+  solve(lines);
+});
