@@ -6,29 +6,40 @@
 ## hw3：判斷質數
 'isPrime' was used before it was defined       no-use-before-define
 ```
-function solve(lines) {
-for(let i = 1; i<lines.length; i += 1){
-    if (isPrime(lines[i])) {
-        console.log('Prime') 
-    } else { 
-        console.log('Composite')
+const readline = require('readline');
+const lines = [];
+const rl = readline.createInterface({
+  input: process.stdin,
+});
+
+rl.on('line', (line) => {
+  lines.push(line);
+});
+
+function solve(input) {
+  for (let i = 1; i < input.length; i += 1) {
+    const n = Number(input[i]);
+    if (isPrime(n)) {
+      console.log('Prime');
+    } else {
+      console.log('Composite');
     }
-    }
-    }
+  }
+}
 function isPrime(n) {
-for(let i = 1; i<lines.length; i += 1){
-    let i = Number(lines.length);
-    const m = Number(lines[0])//表示下面共有幾個數字
-    let n = Number(lines[i]);//將lines[i]轉為數字
-    if (n === 1) return false;
-    for (let i = 2; i < n; i +=1 ) {
-        if (n % i === 0) {
-            return false;
-        } 
-    } 
-    return true;
-        } 
-}  
+  // let n = Number(lines[i])
+  // console.log(isPrime(n))
+  if (n === 1) return false;
+  for (let i = 2; i <= n - 1; i += 1) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+rl.on('close', () => {
+  solve(lines);
+}); 
 ```
 ## hw4：判斷迴文
 錯的地方很呆，程式碼的地方我是輸入true and false 不是像題目一樣True and False，結果在LIOJ上一直被判定錯,以後要小心這種小細節。以為沒差，其實是有影響的。
