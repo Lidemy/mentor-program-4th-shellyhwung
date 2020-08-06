@@ -1,0 +1,257 @@
+body {
+	/*width: 1920px;
+	height: 1500px;
+	box-sizing: border-box;*/
+	background-color: rgba(0,0,0,0.1);
+	}
+
+/*
+.bg_2 { 這裡的格式是依照網頁上的資料打的，但是用 RWD 的時候會整個跑版，請問助教，如果要做 RWD 的話，是不是不要設定 width、height 跟 margin 比較好?
+	max-width: 645px;
+	height: 1150px;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	margin: 121px 636px 126px 639px;
+	box-shadow: 1.8px 2.4px 5px 0 rgba(0,0,0,0.3);
+	border-top: 8px solid #fad312;
+	padding: 54px 298px 999px 42px;
+	}
+*/
+
+
+.bg_2 {
+	max-width: 645px;
+	background-color: white;
+	margin: 10% auto;
+	box-shadow: 1.8px 2.4px 5px 0 rgba(0,0,0,0.3);
+	border-top: 8px solid #fad312;
+	padding: 64px 32px;
+		}
+
+	
+.class__title .h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #000000;
+	margin: 0;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	}
+	
+.date {
+	width: 240px;
+	height: 13px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 14px;
+	margin-top: 35px;
+	
+}
+
+.location{
+	width: 267px;
+	height: 13px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 14px;
+	margin-top: 11px;
+}
+
+.tag {
+	font-size: 16px;
+	color: #e74149;
+	width: 42px;
+	height: 15px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	margin-top: 11px;
+	text-align: left;
+	}
+
+.star {
+	font-size: 20px;
+	color: #e74149;
+	}
+
+.username {
+	width: 287px;
+	height: 17px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 20px;
+	margin-top: 55px;
+	text-align: left;
+	color: #000000;
+}
+
+.answer__rec  {
+	width: 287px;
+	height: 23px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 16px;
+	margin-top: 25px;
+	text-align: left;
+	color: #d0d0d0;
+}
+
+
+.answer__rec input {
+	width: 287px;
+	height: 23px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 16px;
+	margin-top: 5px;
+	text-align: left;
+	color: #afafaf;
+	border: solid 1px #d0d0d0;
+}
+
+.mail {
+	width: 92px;
+	height: 19px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 20px;
+	margin-top: 49px;
+	text-align: left;
+	color: #000000;
+}
+
+.answer__rec  {
+	width: 287px;
+	height: 23px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 16px;
+	margin-top: 25px;
+	text-align: left;
+	color: #d0d0d0;
+}
+
+
+.phone {
+	width: 92px;
+	height: 18px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 20px;
+	margin-top: 49px;
+	text-align: left;
+	color: #000000;
+}
+
+.answer__rec {
+	width: 287px;
+	height: 23px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 16px;
+	margin-top: 25px;
+	text-align: left;
+	color: #d0d0d0;
+}
+
+.persontype {
+	width: 92px;
+	height: 18px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 20px;
+	margin-top: 49px;
+	text-align: left;
+	color: #000000;
+}
+
+.persontype-1 {
+	width: 200px;
+	height: 13px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 14px;
+	margin-top: 24px;
+	text-align: left;
+	color: #000000;
+}
+
+.persontype-2 {
+	width: 200px;
+	height: 14px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 14px;
+	margin-top: 24px;
+	text-align: left;
+	color: #000000;
+}
+
+.method {
+	width: 212px;
+	height: 19px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 20px;
+	margin-top: 49px;
+	text-align: left;
+	color: #000000;
+}
+
+.answer__rec {
+	width: 287px;
+	height: 23px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 16px;
+	margin-top: 25px;
+	text-align: left;
+	color: #d0d0d0;
+}
+
+.suggestion_1 {
+	width: 212px;
+	height: 19px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 28px;
+	margin-top: 48px;
+	text-align: left;
+	color: #000000;
+}
+
+.suggestion_2 {
+	width: 112px;
+	height: 13px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 14px;
+	text-align: left;
+	color: #000000;
+}
+
+.answer__rec {
+	width: 287px;
+	height: 23px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 16px;
+	margin-top: 24px;
+	text-align: left;
+	color: #d0d0d0;
+}
+
+
+.btn_sub input{
+	width: 92px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #fad312;
+	border-color: #fad312;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	margin-top: 55px;
+	font-size: 15px;
+	text-align: center;
+}
+
+
+.warn {
+	width: 210px;
+	height: 13px;
+	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+	font-size: 14px;
+	margin-top: 21px;
+	text-align: left;
+	color: #000000;
+}
+
+.footer__bottom{
+	font-size: 13px;
+	color: #999999;
+	background: black;
+	/*width: 1920px; 這裡蠻神奇的，我把上面的.bg_2 裡面的 height、weigh、跟 margin、padding 都修正之後還是會跑版，但是把這裡也修掉之後，RWD 的畫面就正常了*/
+	height: 60px;
+	border-top: 3px solid #fad312;
+	text-align: center;
+	padding-top: 30px;
+}
