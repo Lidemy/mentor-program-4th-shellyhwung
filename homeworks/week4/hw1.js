@@ -17,6 +17,7 @@ request('https://lidemy-book-store.herokuapp.com/books?_limit=10', (error, respo
     console.log(`${json[i].id} ${json[i].name}`);
   }
 },
+// line 22 一直顯示 function-paren-newline，這個無法改，所以 disable
 // eslint-disable-next-line
 );
 
