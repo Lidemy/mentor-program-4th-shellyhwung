@@ -1,257 +1,234 @@
-body {
-	/*width: 1920px;
-	height: 1500px;
-	box-sizing: border-box;*/
-	background-color: rgba(0,0,0,0.1);
+
+	.navbar {
+		box-shadow: -1.4px -1.4px 6px 0 #97a2a0;	
+	}
+	
+	.navbar .wrapper{
+		height: 84px;
+		background: white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 12px;
+		
+	}
+	
+	.navbar__site-name {
+		color: #489846;
+		font-size: 36px;
+	}
+	
+	.navbar__list {
+		list-style: none;
+		margin= 0;
+		padding= 0;
+		display: flex;
+		font-size: 18px;	
+	}
+	
+	.navbar__list li {
+		margin-left: 12px;
+		border-radius: 8px;
+		transition: background 0.4s ease-in;
+	}
+	
+	.navbar__list li.active, .navbar__list li:hover {
+		background: #ff7286;
+	}
+	
+	.navbar__list li.active a, .navbar__list li:hover a{
+		color: white;
+	}
+	
+	.navbar__list li a {
+		display: block;
+		text-decoration: none;
+		color:black;
+		padding: 12px 24px;					
+	}
+	.wrapper {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 0 12px;
+	}
+	
+	.banner {
+		position: relative;
+		height: 450px;
+		background: url(2.png) center/cover no-repeat;
+	}
+	
+	.banner:after {
+		content: ''; /*設定偽元素時，一定要有一個content*/
+		position: absolute; /*absolute 會往上層找 relative 當定位點*/
+		background: rgba(0, 0, 0, 0.4);
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	
+	.banner h1 {
+		display: inline-block;
+		position: relative;
+		z-index:2;
+		margin: 0;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 60px;
+		font-weight: bold;
+	}
+	
+	h2 {margin: 0;
+	}
+	
+	.section {
+		text-align: center;
+		margin: 80px 0;
+	}
+	
+	.section__title{
+		font-size: 36px;
+		color: #000000;
+		border-left: solid 15px #a3dea2;
+		display: inline-block;
+		padding-left: 17px;
+		margin-bottom: 36px;
+	}
+	
+	.faq__block {
+		margin: 0 auto;
+		max-width: 768px;
+	}
+	
+	.faq__item {
+		display: flex;
+		text-align: left;
+		border-bottom: solid 1px #a6e2c0;
+		padding-bottom: 24px;
+		cursor: pointer;
+	}
+	
+	.faq__item:not(:first-child) {
+		margin-top: 24px;
+	}
+	
+	
+	.faq__hide {
+		height: 16px;
+		overflow: hidden;
+	}
+	
+	.faq__item__number {
+		font-size: 24px;
+		color: #70b282;
+		margin-right: 16px;
+		line-height: 24px;
+	}
+	
+	.faq__item__content h2 {
+		font-size: 18px;
+		font-weight: normal;
+		color: #000000;
+		margin: 0;
+		line-height: 24px;
+	}
+	.faq__item__content p{
+		font-size: 16px;
+		color: #000000;
 	}
 
-/*
-.bg_2 { 這裡的格式是依照網頁上的資料打的，但是用 RWD 的時候會整個跑版，請問助教，如果要做 RWD 的話，是不是不要設定 width、height 跟 margin 比較好?
-	max-width: 645px;
-	height: 1150px;
-	background-color: #ffffff;
-	box-sizing: border-box;
-	margin: 121px 636px 126px 639px;
-	box-shadow: 1.8px 2.4px 5px 0 rgba(0,0,0,0.3);
-	border-top: 8px solid #fad312;
-	padding: 54px 298px 999px 42px;
+	
+	footer {
+	margin-top: 48px;	
 	}
-*/
-
-
-.bg_2 {
-	max-width: 645px;
-	background-color: white;
-	margin: 10% auto;
-	box-shadow: 1.8px 2.4px 5px 0 rgba(0,0,0,0.3);
-	border-top: 8px solid #fad312;
-	padding: 64px 32px;
+	
+	.footer__top {
+		background: #e8efee;
+		padding: 32px;
+		color: #484848;
+		font-size: 14px;
+		
+	}
+	
+	.footer__top .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.footer__info {
+		margin-right: 16px;
+	}
+	
+	.footer__info div + div {
+		color: #484848;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	
+	.footer__site {
+		color:#489846;
+		font-size: 36px;
+	}
+	.footer__bottom {
+		background: #35564b;
+		padding: 12px;
+		text-align: center;
+		color:white;
+		font-size: 16px;
+	}
+	
+	@media(max-width: 768px){
+		.navbar .wrapper {
+			height: 120px;
+			justify-content: space-between;
+			flex-direction: column;
+			padding: 0;
 		}
-
-	
-.class__title .h1 {
-	font-size: 36px;
-	font-weight: bold;
-	color: #000000;
-	margin: 0;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
+		.navbar__site-name{
+			margin-top: 10px;
+		}
+		.navbar__list {
+			display: flex;
+			width: 100%;
+		}
+		.navbar__list li{
+			flex: 1;
+			margin-left: 0;
+			border-radius: 0;
+			text-align: center;
+		}
+		
+		.btn-query {
+			margin-left: 0;
+			margin-top: 16px;
+		}
+		
+		.section__images {
+			flex-direction: column;
+		}
+		
+		.section__images div {
+			width: 100%;
+		}
+		.footer__top .wrapper {
+			flex-direction: column-reverse;
+		}
+		.footer__info {
+		margin-right: 0;
+		margin-top: 16px;
+		}
+	.section__comments {
+		flex-direction: column;
+		justify-content: center;
+		}
+	.comment + .comment {
+		margin-left:0;
+		margin-top: 64px;
+		margin-top: 26px;
+		}
 	}
 	
-.date {
-	width: 240px;
-	height: 13px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 14px;
-	margin-top: 35px;
 	
-}
-
-.location{
-	width: 267px;
-	height: 13px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 14px;
-	margin-top: 11px;
-}
-
-.tag {
-	font-size: 16px;
-	color: #e74149;
-	width: 42px;
-	height: 15px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	margin-top: 11px;
-	text-align: left;
-	}
-
-.star {
-	font-size: 20px;
-	color: #e74149;
-	}
-
-.username {
-	width: 287px;
-	height: 17px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 20px;
-	margin-top: 55px;
-	text-align: left;
-	color: #000000;
-}
-
-.answer__rec  {
-	width: 287px;
-	height: 23px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 16px;
-	margin-top: 25px;
-	text-align: left;
-	color: #d0d0d0;
-}
-
-
-.answer__rec input {
-	width: 287px;
-	height: 23px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 16px;
-	margin-top: 5px;
-	text-align: left;
-	color: #afafaf;
-	border: solid 1px #d0d0d0;
-}
-
-.mail {
-	width: 92px;
-	height: 19px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 20px;
-	margin-top: 49px;
-	text-align: left;
-	color: #000000;
-}
-
-.answer__rec  {
-	width: 287px;
-	height: 23px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 16px;
-	margin-top: 25px;
-	text-align: left;
-	color: #d0d0d0;
-}
-
-
-.phone {
-	width: 92px;
-	height: 18px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 20px;
-	margin-top: 49px;
-	text-align: left;
-	color: #000000;
-}
-
-.answer__rec {
-	width: 287px;
-	height: 23px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 16px;
-	margin-top: 25px;
-	text-align: left;
-	color: #d0d0d0;
-}
-
-.persontype {
-	width: 92px;
-	height: 18px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 20px;
-	margin-top: 49px;
-	text-align: left;
-	color: #000000;
-}
-
-.persontype-1 {
-	width: 200px;
-	height: 13px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 14px;
-	margin-top: 24px;
-	text-align: left;
-	color: #000000;
-}
-
-.persontype-2 {
-	width: 200px;
-	height: 14px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 14px;
-	margin-top: 24px;
-	text-align: left;
-	color: #000000;
-}
-
-.method {
-	width: 212px;
-	height: 19px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 20px;
-	margin-top: 49px;
-	text-align: left;
-	color: #000000;
-}
-
-.answer__rec {
-	width: 287px;
-	height: 23px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 16px;
-	margin-top: 25px;
-	text-align: left;
-	color: #d0d0d0;
-}
-
-.suggestion_1 {
-	width: 212px;
-	height: 19px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 28px;
-	margin-top: 48px;
-	text-align: left;
-	color: #000000;
-}
-
-.suggestion_2 {
-	width: 112px;
-	height: 13px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 14px;
-	text-align: left;
-	color: #000000;
-}
-
-.answer__rec {
-	width: 287px;
-	height: 23px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 16px;
-	margin-top: 24px;
-	text-align: left;
-	color: #d0d0d0;
-}
-
-
-.btn_sub input{
-	width: 92px;
-	height: 40px;
-	border-radius: 3px;
-	background-color: #fad312;
-	border-color: #fad312;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	margin-top: 55px;
-	font-size: 15px;
-	text-align: center;
-}
-
-
-.warn {
-	width: 210px;
-	height: 13px;
-	font-family: MicrosoftJhengHei; /*我的系統沒有支援這個字型*/
-	font-size: 14px;
-	margin-top: 21px;
-	text-align: left;
-	color: #000000;
-}
-
-.footer__bottom{
-	font-size: 13px;
-	color: #999999;
-	background: black;
-	/*width: 1920px; 這裡蠻神奇的，我把上面的.bg_2 裡面的 height、weigh、跟 margin、padding 都修正之後還是會跑版，但是把這裡也修掉之後，RWD 的畫面就正常了*/
-	height: 60px;
-	border-top: 3px solid #fad312;
-	text-align: center;
-	padding-top: 30px;
-}
