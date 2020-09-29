@@ -1,3 +1,8 @@
+/*
+助教，我想請問在 line 14 跟 line 28，
+eslint 時，系統會一直跳出 prefer-destructing，
+我不明白為什麼會一直建議使用解構語法
+*/
 document.querySelector('.btn-add').addEventListener('click', () => {
   function escapeHtml(unsafe) {
     return unsafe
