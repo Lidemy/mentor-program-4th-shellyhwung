@@ -1,0 +1,234 @@
+
+	.navbar {
+		box-shadow: -1.4px -1.4px 6px 0 #97a2a0;	
+	}
+	
+	.navbar .wrapper{
+		height: 84px;
+		background: white;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 12px;
+		
+	}
+	
+	.navbar__site-name {
+		color: #489846;
+		font-size: 36px;
+	}
+	
+	.navbar__list {
+		list-style: none;
+		margin= 0;
+		padding= 0;
+		display: flex;
+		font-size: 18px;	
+	}
+	
+	.navbar__list li {
+		margin-left: 12px;
+		border-radius: 8px;
+		transition: background 0.4s ease-in;
+	}
+	
+	.navbar__list li.active, .navbar__list li:hover {
+		background: #ff7286;
+	}
+	
+	.navbar__list li.active a, .navbar__list li:hover a{
+		color: white;
+	}
+	
+	.navbar__list li a {
+		display: block;
+		text-decoration: none;
+		color:black;
+		padding: 12px 24px;					
+	}
+	.wrapper {
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 0 12px;
+	}
+	
+	.banner {
+		position: relative;
+		height: 450px;
+		background: url(2.png) center/cover no-repeat;
+	}
+	
+	.banner:after {
+		content: ''; /*設定偽元素時，一定要有一個content*/
+		position: absolute; /*absolute 會往上層找 relative 當定位點*/
+		background: rgba(0, 0, 0, 0.4);
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	
+	.banner h1 {
+		display: inline-block;
+		position: relative;
+		z-index:2;
+		margin: 0;
+		color: white;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 60px;
+		font-weight: bold;
+	}
+	
+	h2 {margin: 0;
+	}
+	
+	.section {
+		text-align: center;
+		margin: 80px 0;
+	}
+	
+	.section__title{
+		font-size: 36px;
+		color: #000000;
+		border-left: solid 15px #a3dea2;
+		display: inline-block;
+		padding-left: 17px;
+		margin-bottom: 36px;
+	}
+	
+	.faq__block {
+		margin: 0 auto;
+		max-width: 768px;
+	}
+	
+	.faq__item {
+		display: flex;
+		text-align: left;
+		border-bottom: solid 1px #a6e2c0;
+		padding-bottom: 24px;
+		cursor: pointer;
+	}
+	
+	.faq__item:not(:first-child) {
+		margin-top: 24px;
+	}
+	
+	
+	.faq__hide {
+		height: 16px;
+		overflow: hidden;
+	}
+	
+	.faq__item__number {
+		font-size: 24px;
+		color: #70b282;
+		margin-right: 16px;
+		line-height: 24px;
+	}
+	
+	.faq__item__content h2 {
+		font-size: 18px;
+		font-weight: normal;
+		color: #000000;
+		margin: 0;
+		line-height: 24px;
+	}
+	.faq__item__content p{
+		font-size: 16px;
+		color: #000000;
+	}
+
+	
+	footer {
+	margin-top: 48px;	
+	}
+	
+	.footer__top {
+		background: #e8efee;
+		padding: 32px;
+		color: #484848;
+		font-size: 14px;
+		
+	}
+	
+	.footer__top .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.footer__info {
+		margin-right: 16px;
+	}
+	
+	.footer__info div + div {
+		color: #484848;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+	
+	.footer__site {
+		color:#489846;
+		font-size: 36px;
+	}
+	.footer__bottom {
+		background: #35564b;
+		padding: 12px;
+		text-align: center;
+		color:white;
+		font-size: 16px;
+	}
+	
+	@media(max-width: 768px){
+		.navbar .wrapper {
+			height: 120px;
+			justify-content: space-between;
+			flex-direction: column;
+			padding: 0;
+		}
+		.navbar__site-name{
+			margin-top: 10px;
+		}
+		.navbar__list {
+			display: flex;
+			width: 100%;
+		}
+		.navbar__list li{
+			flex: 1;
+			margin-left: 0;
+			border-radius: 0;
+			text-align: center;
+		}
+		
+		.btn-query {
+			margin-left: 0;
+			margin-top: 16px;
+		}
+		
+		.section__images {
+			flex-direction: column;
+		}
+		
+		.section__images div {
+			width: 100%;
+		}
+		.footer__top .wrapper {
+			flex-direction: column-reverse;
+		}
+		.footer__info {
+		margin-right: 0;
+		margin-top: 16px;
+		}
+	.section__comments {
+		flex-direction: column;
+		justify-content: center;
+		}
+	.comment + .comment {
+		margin-left:0;
+		margin-top: 64px;
+		margin-top: 26px;
+		}
+	}
+	
+	

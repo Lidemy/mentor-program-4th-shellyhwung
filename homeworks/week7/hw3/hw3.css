@@ -1,0 +1,39 @@
+h1 {
+	text-align: center;
+}
+.wrapper{
+	background-color: #FFFDE7;
+	max-width: 500px;
+	margin: 0 auto;
+	color: #189BA3;
+	padding: 24px;
+}
+
+.btn-add{
+	margin-left: 12px;
+}
+.todo {
+	display: flex;
+	align-items: center;
+	margin-top: 12px;
+}
+
+.todo:hover {
+	background: #A1E2DE;
+}
+
+.todo-content {
+	flex: 1;
+}
+
+.todo-checkbox {
+	height: 20px;
+	width: 20px;
+	margin-right: 12px;
+}
+
+.todo.done .todo-content {
+	text-decoration: line-through;
+}
+
+
