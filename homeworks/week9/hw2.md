@@ -24,4 +24,7 @@ VARCHAR：<br>
 像是在註冊時的 username/ nickname/ password/ content 都需小心。<br>
 2. 密碼沒有經過加密處理。密碼直接顯示在資料庫中，如果被駭客入侵資料庫，會讓使用者的個資流失<br>
 3. 帳號密碼沒有限定輸入類型，中文跟一些特殊符號都可以註冊且登入成功，可能會有問題。<br>
+<hr>
+參考資料：<br>
+[資料型態 char varchar nchar nvarchar](https://ithelp.ithome.com.tw/articles/10213922)
 
